@@ -4,7 +4,6 @@ import sys
 import re
 
 w = sys.argv[1]
-lineNum = 1
 
 for line in sys.stdin:
     line = re.sub( r'^\W+|\W+$', '', line )
@@ -13,5 +12,3 @@ for line in sys.stdin:
     for word in words:
         if w == word:
             print(word.lower() + "\t" + line)
-
-    lineNum += 1
