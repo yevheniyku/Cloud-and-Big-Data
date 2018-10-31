@@ -9,6 +9,9 @@ for line in sys.stdin:
 
     line = re.sub( r'^\W+|\W+$', '', line )
 
+    # Another way to check the first firstline
+    #if(not any(char.isalpha() for char in line))
+
     # Checks if it is the first line of input that contains
     # the column names
     if(firstline):
