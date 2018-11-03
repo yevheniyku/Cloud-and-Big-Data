@@ -17,4 +17,4 @@ for line in sys.stdin:
         meteoriteMass = info[5]
 
     if(meteoriteMass != ""):
-        print (meteoriteClass + '\t' + str(meteoriteMass))
+        print (meteoriteClass.lower() + '\t' + str(meteoriteMass))
