@@ -3,20 +3,14 @@
 import sys
 import re
 
-firstline = True
+########################################################
+# Lee la entrada por stdin y saca el año y el precio
+########################################################
+def mapper():
+    for line in sys.stdin:
 
-for line in sys.stdin:
+        line = re.sub( r'^\W+|\W+$', '', line )
 
-    line = re.sub( r'^\W+|\W+$', '', line )
-
-    # Another way to check the first firstline
-    #if(not any(char.isalpha() for char in line))
-
-    # Checks if it is the first line of input that contains
-    # the column names
-    if(firstline):
-        firstline = False
-    else:
         info = line.split(",")
 
         # Getting the year
@@ -28,3 +22,9 @@ for line in sys.stdin:
         price = info[4]
 
         print(year + "\t" + price)
+
+def main():
+    mapper()
+
+if __name__ == "__main__":
+    main()
