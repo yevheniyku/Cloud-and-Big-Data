@@ -8,6 +8,7 @@ import sys
 def reducer():
     previous = ""
     sum = ""
+    key = ""
 
     for line in sys.stdin:
         key, value = line.split( '\t' )
