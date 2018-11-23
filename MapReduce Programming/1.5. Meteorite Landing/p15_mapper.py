@@ -3,6 +3,9 @@
 import sys
 import re
 
+##################################################################
+# parsea el csv sacando los tipos de meteoritos y su masa
+##################################################################
 def mapper():
 
     for line in sys.stdin:
