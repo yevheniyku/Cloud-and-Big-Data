@@ -14,7 +14,7 @@ def stockCounter(input):
     finalResult.sortByKey().saveAsTextFile("output.txt")
 
 def main():
-    conf = SparkConf().setMaster('local').setAppName('DistributedGrep')
+    conf = SparkConf().setMaster('local').setAppName('StockSummary')
     sc = SparkContext(conf = conf)
     input = sc.textFile("GOOGLE.csv")
 
