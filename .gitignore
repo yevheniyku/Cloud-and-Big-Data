@@ -60,3 +60,9 @@ target/
 source/Datasets/
 
 MapReduce Programming/1\.5\. Meteorite Landing/Meteorite_Landings\.csv
+
+MapReduce Programming/1\.4\. Movie Rating Data/ml-latest-small/
+
+SparkProgramming \(2\)\.zip
+
+SparkProgramming/2\.1\.DistributedGrep/output\.txt/
