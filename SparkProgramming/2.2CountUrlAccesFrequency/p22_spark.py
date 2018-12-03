@@ -13,7 +13,7 @@ def urlCounter(input):
     urlVisits.saveAsTextFile("output.txt")
 
 def main():
-    conf = SparkConf().setMaster('local').setAppName('DistributedGrep')
+    conf = SparkConf().setMaster('local').setAppName('CountUrlAccess')
     sc = SparkContext(conf = conf)
     input = sc.textFile("access_log")
 
