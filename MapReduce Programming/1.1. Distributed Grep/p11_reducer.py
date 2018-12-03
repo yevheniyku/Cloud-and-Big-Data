@@ -3,7 +3,7 @@
 import sys
 
 #######################################################
-# Agrupa las líneas que le llegan por stdin
+# Agrupa las lineas que le llegan por stdin
 #######################################################
 def reducer():
     previous = ""

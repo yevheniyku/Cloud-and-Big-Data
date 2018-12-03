@@ -15,13 +15,13 @@ def reducer():
 
         if key != previous:
             if previous is not None:
-                print (str( sum ) + '\t' + previous)
+                print('{}\t{}'.format(sum, previous))
             previous = key
             sum = 0
 
         sum = sum + int( value )
 
-    print(str( sum ) + '\t' + previous)
+    print('{}\t{}'.format(sum, previous))
 
 def main():
     reducer()

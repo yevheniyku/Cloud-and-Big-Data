@@ -4,7 +4,7 @@ import sys
 import re
 
 ########################################################
-# Lee la entrada por stdin y saca el año y el precio
+# Lee la entrada por stdin y saca el anyo y el precio
 ########################################################
 def mapper():
     for line in sys.stdin:
